@@ -1,0 +1,121 @@
+
+.shadow(@xy){
+	box-shadow: @xy;
+	-webkit-box-shadow: @xy;
+	-moz-box-shadow:@xy;
+}
+.round(@x){
+	-moz-border-radius: @x;
+	-webkit-border-radius: @x;
+	border-radius: @x; 
+	-khtml-border-radius: @x;
+}
+.trns(@dec, @ten) {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@ten)";
+  filter: alpha(opacity=@ten);
+  -moz-opacity: @dec;
+  -khtml-opacity: @dec;
+  opacity: @dec;
+}
+
+body{
+	background: url(../../../images/ptrn/extra_clean_paper.png);
+}
+
+#logo{
+	font-family: Old Standard TT;
+	font-size: 140px;
+	color:black;
+	cursor: pointer;
+	line-height: 1.3em;
+	letter-spacing: -10px;
+	text-shadow:0px 1px 1px white;
+
+}
+.smallSlogan{
+	font-family: lato;
+	text-align: center;
+	font-size: 14px;
+	line-height: 3em;
+	margin-bottom: 5%;
+	border:1px solid white;
+	background-color: rgba(255, 255, 255, 0.38);
+	text-shadow:0px 0px 1px white;
+}
+.slogan{
+	font-family: Lato;
+	font-weight:400;
+	line-height: 2em;
+	color:black;
+	text-align: center;
+	border: 1px dotted black;
+	background-color: rgba(255,255,255, 0.8);
+	padding:1%;
+}
+.slogan:hover{
+	background-color: rgba(0, 0, 0, 0.19);
+	color:black;
+}
+.mainModal{
+	background-color: #FCFCFC;
+}
+.left .alert{
+	width:80%;
+}
+
+.left{
+	background-color: transparent;
+}
+#loginUser input{
+	text-align: center;
+	.shadow(none);
+	border:1px solid white;
+	width:85%;
+	background:rgba(0, 0, 0, 0.09);
+}
+#loginUser input:focus{
+	border:1px solid black;
+}
+#forgetPass-form input{
+	background-color: whitesmoke;
+	.shadow(none);
+}
+.bigSlogan{
+	text-align: center;
+	cursor: pointer;
+	font-family:Georgia;
+	margin-bottom: 10%;
+	font-weight: 100;
+	font-size:32px;
+	border-top: 5px solid #D6D6D6;
+	border-bottom: 5px solid #D6D6D6;
+	text-shadow:0px 1px 2px white;
+	letter-spacing: -2px;
+	line-height:2em;
+	color:#252525;
+}
+input[type="text"], input[type="password"]{
+	border:none;
+	background-color:transparent;
+	font-family:Tahoma;
+	font-weight:400;
+	color:black;
+	font-size:22px;
+	line-height:1.2em;
+	height:auto;
+	border-bottom: dashed #D3D1D1 1px;
+	.shadow(inset 0px 0px 6px #ACACAC);
+}
+input[type="text"]:focus, input[type="password"]:focus{
+	.shadow(none);
+	border:none;
+	border-bottom: dashed black 1px;
+}
+#cr-form-post{
+	text-align: center;
+}
+
+.pgRow{
+	text-align: center;
+	margin-bottom: 20%;
+}
